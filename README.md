@@ -1,5 +1,15 @@
 # Nvidia-MPS-Docker-Pytorch-ShellScript
 
+## pre-requieste and use
+
+1. docker installation
+2. proper nvidia-driver installation
+3. nvidia-container-toolkit installation
+4. launch mpsdaemon.sh
+5. launch MPSdocker.sh
+6. docker exec -it <container name> bash
+7. run pytorch learning
+
 ## 사용법
 
 아래는 `mpsdaemon.sh` 스크립트의 사용 예시입니다.
