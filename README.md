@@ -10,7 +10,7 @@ upper step https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/lat
   
 5. launch mpsdaemon.sh
 6. launch MPSdocker.sh
-7. docker exec -it <container name> bash
+7. docker exec -it container-name bash
 8. run pytorch learning
 
 ## 사용법
