@@ -54,3 +54,6 @@ docker cp ~/resnet50_cifar10.py py3:/workspace
 sh MPSdocker.sh
 ```
 
+## Result
+
+<img width="446" alt="image" src="https://github.com/emptyinteger/Nvidia-MPS-Docker-Pytorch-ShellScript/assets/92441821/2fbb5ffe-e59a-4b94-a286-d7a3f59374a5">
