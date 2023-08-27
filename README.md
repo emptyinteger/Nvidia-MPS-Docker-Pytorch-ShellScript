@@ -2,8 +2,8 @@
 
 ## pre-requieste and use
 
-1. docker installation
-2. proper nvidia-driver installation
+1. nvidia-driver installation
+2. docker installation
 3. nvidia-container-toolkit installation
 
 upper step https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html 
