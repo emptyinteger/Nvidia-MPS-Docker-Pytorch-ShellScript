@@ -14,5 +14,5 @@ sudo sh mpsdaemon.sh 0,1,2,3,... 10
 sudo sh mpsdaemon.sh 0,1,2,3,... 33
 ```
 
-args 1 means the NVIDIA_DEVICE_ID , \n
+args 1 means the NVIDIA_DEVICE_ID , <br>
 args 2 means the default thread share for one process
