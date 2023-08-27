@@ -5,10 +5,13 @@
 1. docker installation
 2. proper nvidia-driver installation
 3. nvidia-container-toolkit installation
-4. launch mpsdaemon.sh
-5. launch MPSdocker.sh
-6. docker exec -it <container name> bash
-7. run pytorch learning
+
+upper step https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html 
+  
+5. launch mpsdaemon.sh
+6. launch MPSdocker.sh
+7. docker exec -it <container name> bash
+8. run pytorch learning
 
 ## 사용법
 
