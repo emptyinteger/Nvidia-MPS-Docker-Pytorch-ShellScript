@@ -33,6 +33,8 @@ args 2 means the default thread share for one process
 
 ## 컨테이너 실행 및 명령어 실행
 
+If you want to use ```resnet.py``` then replace ```resnet50_cifar10.py``` to ```resnet.py``` under below script
+
 ```bash
 ### 컨테이너 1 which select device 0 to use
 docker run -it -d -e "CUDA_VISIBLE_DEVICES=0" -e "CUDA_MPS_PIPE_DIRECTORY=/tmp/nvidia-mps" -e "CUDA_MPS_LOG_DIRECTORY=/tmp/nvidia-log" --name py1 --gpus '"device=0"' -v /tmp/nvidia-mps:/tmp/nvidia-mps --ipc=host pytorch/pytorch:2.0.1-cuda11.7-cudnn8-runtime
@@ -62,6 +64,15 @@ Under instruction to train `resnet50_cifar10.py` in py1(your container name)
 docker exec -it py1(your container name) bash
 pip install matplotlib
 torchrun --standalone resnet50_cifar10.py
+```
+
+## how to execute resnet.py
+
+Under instruction to train `resnet50_cifar10.py` in py1(your container name) 
+
+```bash
+docker exec -it py1(your container name) bash
+python3 resnet.py
 ```
 
 ## if you have trouble in training
