@@ -60,6 +60,7 @@ Under instruction to train `resnet50_cifar10.py` in py1(your container name)
 
 ```bash
 docker exec -it py1(your container name) bash
+pip install matplotlib
 torchrun --standalone resnet50_cifar10.py
 ```
 
