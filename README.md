@@ -54,6 +54,23 @@ docker cp ~/resnet50_cifar10.py py3:/workspace
 sh MPSdocker.sh
 ```
 
+## how to execute resnet50_cifar10.py
+
+Under instruction to train `resnet50_cifar10.py` in py1(your container name) 
+
+```bash
+docker exec -it py1(your container name) bash
+torchrun --standalone resnet50_cifar10.py
+```
+
+## if you have trouble in training
+
+try under command and restart `mpsdaemon.sh`
+
+```bash
+sudo pkill -9 nvidia-cuda-mps
+```
+
 ## Result
 
 <img width="446" alt="image" src="https://github.com/emptyinteger/Nvidia-MPS-Docker-Pytorch-ShellScript/assets/92441821/2fbb5ffe-e59a-4b94-a286-d7a3f59374a5">
